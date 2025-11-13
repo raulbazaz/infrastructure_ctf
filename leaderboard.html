@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - Capture the Flag 2025</title>
+    <link rel="stylesheet" href="leaderboard.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Capture the Flag 2025</h1>
+            <p>Turing Community</p>
+        </div>
+        <div class="header-buttons">
+            <button id="challengesBtn" class="nav-btn">Challenges</button>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Leaderboard</h2>
+        <p class="subtitle">Live rankings updating every 3 seconds</p>
+
+        <div class="leaderboard">
+            <table id="leaderboardTable">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Team Name</th>
+                        <th>Points</th>
+                        <th>Solved</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardBody">
+                    <!-- Teams will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="leaderboard.js"></script>
+</body>
+
+</html>
