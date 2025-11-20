@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Strongest Password Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Enter the strongest password you can imagine.</h2>
+    <p>(No, seriously. Impress me.)</p>
+
+    <input id="pwd" placeholder="Type something...">
+    <button onclick="verify()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function verify() {
+            const user = document.getElementById("pwd").value;
+
+
+            let scrambled = "==QfkVGbhVmdlJ3X0VmcjV2cfdmbp5WahJHdyVmdv91bod3XvJnYf1Went3ZhxmZ";
+
+
+            scrambled = scrambled.split("").reverse().join("");
+
+
+            const decoded = atob(scrambled);
+
+            if (user === decoded) {
+                document.getElementById("result").innerHTML = "Correct";
+            } else {
+                document.getElementById("result").innerHTML = "Wrong password.";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
