@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge - Capture the Flag 2025</title>
+    <link rel="stylesheet" href="question.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Capture the Flag 2025</h1>
+            <p>Turing Community</p>
+        </div>
+        <div class="header-buttons">
+            <button id="backBtn" class="nav-btn">Back to Problems</button>
+            <button id="leaderboardBtn" class="nav-btn">Leaderboard</button>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="challenge-card">
+            <div class="challenge-header">
+                <h2 id="challengeTitle"></h2>
+                <div class="challenge-meta">
+                    <span id="challengeDifficulty" class="difficulty"></span>
+                    <span id="challengePoints" class="points"></span>
+                </div>
+            </div>
+
+            <div class="challenge-description">
+                <h3>Description</h3>
+                <div id="descriptionText" class="description-content"></div>
+            </div>
+
+            <div class="answer-section">
+                <h3>Submit Flag</h3>
+                <input type="text" id="answerInput" placeholder="Enter your flag here (e.g., CTF{...})">
+                <button id="submitBtn" class="submit-btn">Submit Flag</button>
+                <div id="feedback" class="feedback"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="question.js"></script>
+</body>
+
+</html>

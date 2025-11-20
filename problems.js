@@ -11,8 +11,8 @@ document.getElementById('leaderboardBtn').addEventListener('click', function () 
 // Add click handlers to problem items
 document.querySelectorAll('.problem-item').forEach(item => {
     item.addEventListener('click', function () {
-        const problemName = this.querySelector('.problem-name').textContent;
-        const points = this.querySelector('.points').textContent;
-        alert(`Challenge: ${problemName}\nPoints: ${points}\n\nChallenge details will be implemented here!`);
+        const problemId = this.dataset.id;
+        // Navigate to question page with problem ID
+        window.location.href = `question.html?id=${problemId}`;
     });
 });
